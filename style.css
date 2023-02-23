@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+:root {
+    --gradients-background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%,hsl(241, 81%, 54%) 100%);
+    --gradients-circles: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) 0%,hsla(241, 72%, 46%, 0) 100%);
+
+    
+    /* colors */
+
+
+    --white-color:hsl(0, 0%, 100%);
+    --pale-blue-color:hsl(221, 100%, 96%);
+    --light-lavender-color:hsl(241, 100%, 89%);
+    --dark-gray-blue-color:hsl(224, 30%, 27%);
+
+    --red-color:hsl(0, 100%, 67%);
+    --red-color-light: hsl(0, 100%, 97%);
+    --orange-color:hsl(39, 100%, 56%);
+    --orange-color-light: hsl(39, 100%, 97%);
+    --green-color:hsl(166, 100%, 37%);
+    --green-color-light: hsl(166, 100%, 97%);
+    --blue-color:hsl(234, 85%, 45%);
+    --blue-color-light: hsl(234, 85%, 98%);
+
+}
+
+body {
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+
+}
+p {
+    font-size: 18px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 700px;
+    height: 500px;
+    box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+
+}
+
+/* Blue Card Result - left side */
+
+.result-card {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    flex: 1;
+    height: 100%;
+    background: var(--gradients-background);
+
+}
+
+.heading-card {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--pale-blue-color);
+    padding: 1rem 2rem;
+}
+
+.score-card {
+    background: var(--gradients-circles);
+    display: flex;
+    padding: 2.5rem 3.5rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-direction: column;
+    
+
+}
+.score-card p {
+    font-size: 3.5rem;
+    font-weight: 800;
+    height: max-content;
+    color: var(--white-color)
+    
+
+}
+.score-card span {
+    color: var(--light-lavender-color)
+    
+}
+
+.text-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+.text-card p {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 1rem;
+
+}
+.text-card span{
+    color: var(--light-lavender-color);
+    text-align: center;
+    width: 14rem;
+    
+
+
+}
+
+/* Sumarry right side */
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+    
+
+}
+
+.heading-summary{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-top: 1.25rem;
+    align-self: flex-start;
+    color: var(--dark-gray-blue-color)
+
+
+}
+.summary-review{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0.25rem;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-weight: 600;
+    
+
+}
+.icon-container-summary {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.summary-review p {
+    text-align: center;
+
+}
+
+.reaction {
+    color: var(--red-color);
+    background-color: var(--red-color-light);
+
+}
+.memory {
+    color: var(--orange-color);
+    background-color: var(--orange-color-light);
+}
+.verbal {
+     color: var(--green-color);
+     background-color: var(--green-color-light)
+}
+
+.visual {
+    color: var(--blue-color);
+    background-color: var(--blue-color-light)
+}
+
+.score-summary {
+    color: var(--light-lavender-color);
+}
+.score-summary span{
+    color: var(--dark-gray-blue-color)
+}
+
+.button {
+    color: var(--white-color);
+    width: 100%;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--dark-gray-blue-color);
+    cursor: pointer;
+   
+    
+}
+.button:hover {
+    background: var(--gradients-background);
+}
+
+
+
+.attribution {
+    padding: 4rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 763px) {
+  .container {
+    flex-direction: column;
+    width: 375px;
+    margin-top: 25rem;
+    height: 100%;
+  }
+  .summary {
+    width: 100%
+  };
+}
+
